@@ -622,6 +622,69 @@ video {
   * @import "components/forms";
   */
 
+.btn-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em
+}
+
+.banner{
+  background: #f8f9fa;
+  background-image:url('../resources/future_web.svg');
+  background-position: left 50% top -215px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  padding: 72px 24px;
+}
+
+.logo{
+  height: 30px;
+  width: 125px;
+}
+
+.icon-search{
+  margin-top: 0.75rem;
+  margin-right: 1rem;
+  position: absolute;
+  left:10px;
+  top:1px;
+}
+
+@media (min-width: 768px){
+  .btn-primary{
+    margin-bottom: 0px;
+    margin-right: 1rem
+  }
+
+  .banner{
+    background-position: left 430px top 50%;
+    background-size: 650px;
+  }
+}
+
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
